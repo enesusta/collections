@@ -1,7 +1,7 @@
 import commonjs from '@rollup/plugin-commonjs'
-import external from 'rollup-plugin-peer-deps-external'
+//import external from 'rollup-plugin-peer-deps-external'
 import nodeResolve from '@rollup/plugin-node-resolve'
-import url from '@rollup/plugin-url'
+//import url from '@rollup/plugin-url'
 import { terser } from "rollup-plugin-terser";
 
 import pkg from './package.json'
@@ -25,11 +25,9 @@ export default [
       }
     ],
     plugins: [
-      external(),
-      url({ exclude: ['**/*.svg'] }),
-      nodeResolve({ jsnext: true, preferBuiltins: true, browser: true }),
+      nodeResolve(),
       commonjs(),
-      // terser()
+      terser()
     ]
   }
 ]
