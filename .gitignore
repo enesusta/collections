@@ -7,8 +7,6 @@ node_modules
 # webstorm
 .idea
 
-!src/form
-
 # builds
 build
 dist
