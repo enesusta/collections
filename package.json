@@ -1,0 +1,44 @@
+{
+  "name": "@enesusta/collections",
+  "version": "1.0.0",
+  "description": "is custom react hooks library.",
+  "author": "enesusta",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enesusta/collections"
+  },
+  "homepage": "https://github.com/enesusta/collections#readme",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "jest",
+    "build": "yarn clean && rollup -c",
+    "start": "rollup -c -w",
+    "prepare": "yarn run build",
+    "cov": "jest --coverage",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@rollup/plugin-commonjs": "^13.0.2",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-url": "^5.0.0",
+    "@types/jest": "^26.0.4",
+    "@types/node": "^14.0.27",
+    "babel-jest": "^26.1.0",
+    "coveralls": "^3.1.0",
+    "jest": "^26.1.0",
+    "rollup": "^2.21.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-terser": "^6.1.0"
+  }
+}
