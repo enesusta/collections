@@ -23,6 +23,8 @@ export default class SinglyLinkedList {
         removed.next = null;
         this.size--;
 
+        console.log(removed.value);
+
         return removed.value;
     }
 
@@ -35,12 +37,7 @@ export default class SinglyLinkedList {
     }
 
     clear() {
-        const current = this.head;
-        while (current) {
-            const node = current;
-            node = null;
-            current = current.next;
-        }
+        while (this.pop());
     }
 
     consume() {
