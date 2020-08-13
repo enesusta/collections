@@ -1,0 +1,36 @@
+import Node from '../list/Node';
+
+export default class Stack {
+    constructor() {
+        this.head = null;
+        this.size = 0;
+    }
+
+    push(value) {
+        const node = new Node(value);
+        node.next = this.head;
+
+        this.head = node;
+        this.size++;
+    }
+
+    pop() {
+        if (!this.head) return null;
+
+        const removed = this.head;
+        this.head = this.head.next;
+
+        removed.next = null;
+        this.size--;
+
+        return removed.value;
+    }
+
+    peek() {
+        return this.head.value;
+    }
+
+    clear() {
+        while (this.pop());
+    }
+}

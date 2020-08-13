@@ -1,1 +1,1 @@
-export { default as LinkedList } from './list/LinkedList';
+export { default as SinglyLinkedList } from './list/SinglyLinkedList';
