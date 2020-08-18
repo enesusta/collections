@@ -1,4 +1,4 @@
-import Node from './Node';
+import LinkedListNode from './LinkedListNode';
 
 export default class SinglyLinkedList {
     constructor() {
@@ -7,7 +7,7 @@ export default class SinglyLinkedList {
     }
 
     push(value) {
-        const node = new Node(value);
+        const node = new LinkedListNode(value);
         node.next = this.head;
 
         this.head = node;

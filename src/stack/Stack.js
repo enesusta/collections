@@ -1,4 +1,4 @@
-import Node from '../list/Node';
+import LinkedListNode from '../list/LinkedListNode';
 
 export default class Stack {
     constructor() {
@@ -7,7 +7,7 @@ export default class Stack {
     }
 
     push(value) {
-        const node = new Node(value);
+        const node = new LinkedListNode(value);
         node.next = this.head;
 
         this.head = node;
