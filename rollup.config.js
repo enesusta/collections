@@ -1,10 +1,12 @@
 import commonjs from '@rollup/plugin-commonjs'
 //import external from 'rollup-plugin-peer-deps-external'
-import nodeResolve from '@rollup/plugin-node-resolve'
+//import resolve from '@rollup/plugin-node-resolve'
 //import url from '@rollup/plugin-url'
 import { terser } from "rollup-plugin-terser";
+import creator from './rollup.config.creator';
 
 import pkg from './package.json'
+
 
 export default [
   {
@@ -25,9 +27,12 @@ export default [
       }
     ],
     plugins: [
-      nodeResolve(),
       commonjs(),
-      terser()
+      //terser()
     ]
-  }
+  },
+  creator('list', true),
+  creator('list', false),
+  creator('queue', true),
+  creator('queue', false)
 ]

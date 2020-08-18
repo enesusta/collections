@@ -12,6 +12,8 @@ build
 dist
 coverage
 .rpt2_cache
+list
+queue
 
 # misc
 .DS_Store
