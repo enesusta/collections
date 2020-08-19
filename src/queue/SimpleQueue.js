@@ -6,13 +6,9 @@ export default class SimpleQueue {
     }
 
     enqueue(value) {
-        if (!this.tail) return false;
-
         const node = new QueueNode(value);
         node.prev = this.tail;
         this.tail = node;
-
-        return true;
     }
 
     dequeue() {

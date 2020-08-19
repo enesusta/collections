@@ -12,7 +12,7 @@ const creator = (name, isES6) => {
         ],
         plugins: [
             isES6 ? commonjs() : null,
-            terser()
+            //   terser()
         ]
     }
 };

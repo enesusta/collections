@@ -1,7 +1,7 @@
 {
   "name": "@enesusta/collections",
-  "version": "1.0.1",
-  "description": "is custom react hooks library.",
+  "version": "1.0.2",
+  "description": "Collections is a library that has data structures algorithms which implemented in JavaScript.",
   "author": "enesusta",
   "license": "MIT",
   "repository": {
@@ -22,7 +22,7 @@
     "queue"
   ],
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist list queue",
     "test": "jest",
     "build": "yarn clean && rollup -c",
     "start": "rollup -c -w",
