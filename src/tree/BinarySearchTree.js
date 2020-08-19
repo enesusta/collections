@@ -11,8 +11,17 @@ export default class BinarySearchTree {
   }
 
   traverseInOrder() {
-    console.log('girdi');
     if (!this.root) this.root.traverseInOrder();
+  }
+
+  min() {
+    if (!this.root) return Number.MIN_VALUE;
+    return this.root.min();
+  }
+
+  max() {
+    if(!this.root) return Number.MAX_VALUE;
+    return this.root.max();
   }
 
 }

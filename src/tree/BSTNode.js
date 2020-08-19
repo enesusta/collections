@@ -1,14 +1,14 @@
 export default class BSTNode {
-  constructor(value) {
-    this.value = value;
+  constructor(data) {
+    this.data = data;
     this.right = null;
     this.left = null;
   }
 
   insert(value) {
-    if (value === this.value) return;
+    if (this.data === value) return;
 
-    if (this.value < value) {
+    if (value < this.data) {
       if (!this.left) this.left = new BSTNode(value);
       this.left.insert(value);
     } else {
@@ -17,9 +17,19 @@ export default class BSTNode {
     }
   }
 
+  min() {
+    if (!this.left) return this.data;
+    return this.left.min();
+  }
+
+  max() {
+    if (!this.right) return this.data;
+    return this.right.max();
+  }
+
   traverseInOrder() {
     if (!this.left) this.left.traverseInOrder();
-    console.error(this.value);
+    console.error(this.data);
     if (!this.right) this.right.traverseInOrder();
   }
 }
