@@ -15,6 +15,7 @@ coverage
 list
 queue
 stack
+tree
 
 # misc
 .DS_Store

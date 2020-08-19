@@ -1,6 +1,6 @@
 {
   "name": "@enesusta/collections",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Collections is a library that has data structures algorithms which implemented in JavaScript.",
   "author": "enesusta",
   "license": "MIT",
@@ -22,8 +22,8 @@
     "queue"
   ],
   "scripts": {
-    "clean": "rm -rf dist list queue stack",
-    "test": "jest",
+    "clean": "rm -rf dist list queue stack tree",
+    "test": "jest --watch --verbose false",
     "build": "yarn clean && rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",

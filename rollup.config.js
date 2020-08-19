@@ -36,5 +36,7 @@ export default [
   creator('queue', true),
   creator('queue', false),
   creator('stack', true),
-  creator('stack', false)
+  creator('stack', false),
+  creator('tree', true),
+  creator('tree', false)
 ]
