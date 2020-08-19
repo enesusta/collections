@@ -19,7 +19,8 @@
   "files": [
     "dist",
     "list",
-    "queue"
+    "queue",
+    "tree"
   ],
   "scripts": {
     "clean": "rm -rf dist list queue stack tree",
