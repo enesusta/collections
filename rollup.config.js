@@ -34,5 +34,7 @@ export default [
   creator('list', true),
   creator('list', false),
   creator('queue', true),
-  creator('queue', false)
+  creator('queue', false),
+  creator('stack', true),
+  creator('stack', false)
 ]

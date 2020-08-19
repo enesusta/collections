@@ -1,6 +1,6 @@
 import LinkedListNode from '../list/LinkedListNode';
 
-export default class Stack {
+export default class LinkedStack {
     constructor() {
         this.head = null;
         this.size = 0;

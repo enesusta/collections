@@ -1,1 +1,1 @@
-export { default as SimpleQueue } from './SimpleQueue';
+export { default as LinkedQueue } from './LinkedQueue';

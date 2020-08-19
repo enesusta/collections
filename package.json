@@ -22,7 +22,7 @@
     "queue"
   ],
   "scripts": {
-    "clean": "rm -rf dist list queue",
+    "clean": "rm -rf dist list queue stack",
     "test": "jest",
     "build": "yarn clean && rollup -c",
     "start": "rollup -c -w",

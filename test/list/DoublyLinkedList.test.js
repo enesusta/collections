@@ -7,7 +7,6 @@ describe('doublylinkedlist test', () => {
         const list = new DoublyLinkedList();
         list.push(10);
         list.push(11);
-        list.push(11);
         list.push(12);
         list.push(13);
         list.enqueue(14);
@@ -17,5 +16,5 @@ describe('doublylinkedlist test', () => {
         for (let value of list.iterateFromHead()) {
             console.log(value);
         }
-    })
-})
+    });
+});

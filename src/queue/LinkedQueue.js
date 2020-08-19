@@ -1,6 +1,6 @@
 import QueueNode from "./QueueNode";
 
-export default class SimpleQueue {
+export default class LinkedQueue {
     constructor() {
         this.tail = null;
     }
