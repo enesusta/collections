@@ -1,0 +1,1 @@
+export { default as ProgressiveOverflow } from './progressive-overflow/ProgressiveOverflow';
